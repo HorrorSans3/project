@@ -5,8 +5,8 @@ var play = ["What is the frozen water part of the Earth called?",
  "How fast does fall snow?",
  "Where is the Snowiest city on Earth?",
  "For snowman-building, which type of ice is better to use?",
- "",
- "",
+ "Deposits of ice crystals on objects exposed to air",
+ "Which is not a type of frost?",
  "",
  "",
  ];
@@ -165,6 +165,44 @@ var play = ["What is the frozen water part of the Earth called?",
 							}
 							document.getElementById('C').onclick = function(){
 								document.getElementById('quest').innerHTML = play[6]
+								document.getElementById('A').innerHTML = "Frosting"
+								document.getElementById('B').innerHTML = "Hoarfrost"
+								document.getElementById('C').innerHTML = "Glacial Air"
+
+								document.getElementById('A').onclick = function(){
+									lives -= 1;
+									if ((lives)==2){
+										alert(z + ", 2 lives left")
+										document.getElementById('heart3').style.visibility = "hidden"
+									}
+									else if ((lives)==1){
+										alert(z + ", 1 life left")
+										document.getElementById('heart2').style.visibility = "hidden"
+									}
+									else if ((lives)==0){
+										window.location.replace('gameover.html')
+									}
+								}
+								document.getElementById('B').onclick = function(){
+									document.getElementById('quest').innerHTML = play[7]
+									document.getElementById('A').innerHTML = "Icy"
+									document.getElementById('B').innerHTML = "Advection"
+									document.getElementById('C').innerHTML = "Window"
+								}
+								document.getElementById('C').onclick = function(){
+									lives -= 1;
+									if ((lives)==2){
+										alert(z + ", 2 lives left")
+										document.getElementById('heart3').style.visibility = "hidden"
+									}
+									else if ((lives)==1){
+										alert(z + ", 1 life left")
+										document.getElementById('heart2').style.visibility = "hidden"
+									}
+									else if ((lives)==0){
+										window.location.replace('gameover.html')
+									}
+								}
 							}
 
 
