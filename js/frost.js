@@ -111,6 +111,9 @@ var play = ["What is the frozen water part of the Earth called?",
 					}
 					document.getElementById('B').onclick = function() {
 						document.getElementById('quest').innerHTML = play[4]
+						document.getElementById('A').innerHTML = ""
+						document.getElementById('B').innerHTML = ""
+						document.getElementById('C').innerHTML = ""
 					}
 					document.getElementById('C').onclick = function() {
 						lives -= 1;
