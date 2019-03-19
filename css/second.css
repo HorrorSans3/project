@@ -1,0 +1,131 @@
+
+
+h1{
+	color: #000;
+	font-size: 100px;
+	-webkit-text-stroke: 2px white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-shadow: 2px;
+    text-decoration-color: grey;
+}
+body{
+	animation: back 15s;
+	-webkit-animation: back 6s infinite;
+}
+#header{
+    transform: translateY(-10%) translateX(16%);
+}
+
+@keyframes back {
+
+    0% {background-color: #66ccff;}
+    20% {background-color:   #ff99ff;}
+    40% {background-color: #ffff80;}
+    60% {background-color: #ffb366;}
+    80% {background-color:  #ccff99; }
+    100% {background-color: #66ccff;}
+}
+  
+
+#home {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-right:40px solid red;
+      border-bottom: 20px solid transparent;
+      position: absolute;
+      transform: translateY(-50px);
+    }
+
+
+        .content{
+            margin-left: 600px;
+            width: 190px;
+            perspective: 1000px;
+            position: absolute;
+            transform: translateY(30px);
+        }
+        .content-carrousel
+        {
+            width: 50px;
+            position: absolute;
+            float: right;
+            animation: rotar 15s infinite linear;
+            transform-style:preserve-3d; 
+        }
+        .content-carrousel figure:nth-child(1) :hover
+        {
+            animation-play-state: paused;
+            cursor: url(../cursor/norm.cur),auto;
+        }
+        .content-carrousel figure:nth-child(2) :hover
+        {
+            animation-play-state: paused;
+            cursor: url(../cursor/ice.cur),auto;
+        }
+        .content-carrousel figure:nth-child(3) :hover
+        {
+            animation-play-state: paused;
+            cursor: url(../cursor/spacecur.cur),auto;
+        }
+        .content-carrousel figure:nth-child(4) :hover
+        {
+            animation-play-state: paused;
+            cursor: url(../cursor/wing.cur),auto;
+        }
+        .content-carrousel figure:nth-child(5) :hover
+        {
+            animation-play-state: paused;
+            cursor: url(../cursor/leaf.cur),auto;
+        }
+        .content-carrousel figure
+        {
+            width: 280px;
+            height: 140px;
+            border: 2px solid #fff;
+            overflow: hidden;
+            position: absolute;
+        }
+        .content-carrousel figure:nth-child(1)
+        {
+            transform: rotateY(72deg) translateZ(300px); 
+        }
+        .content-carrousel figure:nth-child(2)
+        {
+            transform: rotateY(144deg) translateZ(300px); 
+        }
+        .content-carrousel figure:nth-child(3)
+        {
+            transform: rotateY(216deg) translateZ(300px); 
+        }
+        .content-carrousel figure:nth-child(4)
+        {
+            transform: rotateY(288deg) translateZ(300px); 
+        }
+        .content-carrousel figure:nth-child(5)
+        {
+            transform: rotateY(360deg) translateZ(300px); 
+        }
+.shadow{
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 2px; 
+}
+.content-carrousel img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+.content-carrousel img:hover
+{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    } to{
+        transform: rotateY(360deg);
+    }
+}

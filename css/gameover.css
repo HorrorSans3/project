@@ -1,0 +1,27 @@
+h1{
+	color: #99ccff;
+	font-size: 100px;
+	-webkit-text-stroke: 2px black;
+}
+body{
+	animation: back 5s;
+	-webkit-animation: back 5s infinite;
+}
+
+@keyframes back {
+
+	0% {background-color: #3333ff;}
+	20% {background-color:   #1a75ff;}
+	40% {background-color: #009999;}
+	60% {background-color: #009999;}
+	80% {background-color:  #1a75ff; }
+	100% {background-color: #3333ff;}
+}
+ #home {
+     width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-right:40px solid red;
+     border-bottom: 20px solid transparent;
+     position: absolute;
+   }

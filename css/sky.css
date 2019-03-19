@@ -1,0 +1,141 @@
+#heart{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px);
+
+}
+#heart2{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px) ;
+	margin-left: 55px;
+}
+#heart3{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px);
+	margin-left: 110px;
+}
+ @keyframes back {
+
+	0% {background-color: #b3f0ff;}
+	20% {background-color:   #66d9ff;}
+	40% {background-color: #33bbff;}
+	60% {background-color: #33bbff;}
+	80% {background-color:  #66d9ff; }
+	100% {background-color: #b3f0ff;}
+}
+body{
+	animation: back 5s;
+	-webkit-animation: back 5s infinite;
+	cursor: url(../cursor/wing.cur),auto;
+
+}
+#Qboard{
+	background-color: #00aaff;
+	border: 2px solid black;
+	width: 30%;
+	height: 150px;
+	margin-left: 35%;
+	margin-top: 1%;
+
+}
+#quest{
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+}
+#start{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #00aaff;
+	border-color: #6600ff;
+	margin-left: 45%;
+	margin-top: 1%;
+	color: white;
+	cursor: url(../cursor/clouds.cur),auto;
+
+margin-top: 5%;}
+#answer{
+	border-color: #ff1a1a;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	margin-left: 570px;
+}
+#timerdiv{
+
+	position: absolute;
+	width: 100px;
+	height: 70px;
+	margin-top: 20px;
+	margin-left: 1100px;
+}
+#next{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #ff6666;
+	border-color: #e60000;
+	margin-left: 600px;
+}
+#A{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #00aaff;
+	border-color: #6600ff;
+	margin-left: 45%;
+	color: white;
+	cursor: url(../cursor/clouds.cur),auto;
+
+}
+#B{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #00aaff;
+	color: white;
+	border-color: #6600ff;
+	margin-left: 45%;
+	cursor: url(../cursor/clouds.cur),auto;
+
+}
+#C{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #00aaff;
+	color: white;
+	border-color: #6600ff;
+	margin-left: 45%;
+	cursor: url(../cursor/clouds.cur),auto;
+
+}
+#output{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	color: #f2f2f2;
+}
+#lives{
+	color: #6600ff;
+	transform: translateY(200%);
+	-webkit-text-stroke: 0.1px #c299ff;
+	font-size: 30px;
+
+}
+    #home {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-right:40px solid #1a8cff;
+      border-bottom: 20px solid transparent;
+      position: absolute;
+      cursor: url(../cursor/clouds.cur),auto;
+
+    }

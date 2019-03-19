@@ -1,0 +1,70 @@
+#buttonS{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 200px;
+    border-radius: 15px;
+	font-size: 43px;
+	border-width: 5px;
+	background-color: #80bfff;
+	border-style: outset;
+	cursor: pointer;
+
+
+
+
+}
+#buttonO{
+	font-family: "Times New Roman";
+	height: 50px;
+	width: 200px;
+    border-radius: 15px;
+	font-size: 43px;
+	background-color: #80bfff;
+	border-style: outset;
+	cursor: pointer;
+
+
+
+
+}
+body{
+	animation: back 5s;
+	-webkit-animation: back 5s infinite;
+}
+
+@keyframes back {
+
+	0% {background-color: #e6f2ff;}
+	20% {background-color:   #ccccff;}
+	40% {background-color: #ffccff;}
+	60% {background-color: #ffccff;}
+	80% {background-color:  #ccccff; }
+	100% {background-color: #e6f2ff;}
+}
+
+#buttonS:hover{
+ background-color: #b3b3b3;
+ border-style: inset;
+ border-color: #8c8c8c;
+}
+#buttonO:hover{
+	 background-color: #b3b3b3;
+	 border-color: #8c8c8c;
+	 border-style: inset;
+}
+
+h1{
+	color: #737373;
+	font-size: 100px;
+
+}
+p{
+    transform: translateY(-250%);
+    color: #8c8c8c;
+    font-size: 30px;
+    padding-left: 300px;
+}
+
+
+
+ 

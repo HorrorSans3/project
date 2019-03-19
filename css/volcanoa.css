@@ -1,0 +1,31 @@
+html{
+	background-image: url("../images/volcanoback.jpg");
+	background-size: cover;
+}
+body{
+	cursor: url(../cursor/norm.cur), auto;
+}
+#label{
+	font-size: 60px;
+	color: #ffcccc;
+	-webkit-text-stroke: 1px black;
+	padding-top: 100px;
+}
+#button{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 200px;
+    border-radius: 15px;
+	font-size: 43px;
+	background-color: #80bfff;
+	border-width: 5px;
+	border-style: outset;
+}
+#button:hover{
+ background-color: #ff1a1a;
+ border-style: inset;
+ border-color: #8c8c8c;
+ color: #000000;
+ cursor: url(../cursor/emberselect.cur), auto;
+}
+

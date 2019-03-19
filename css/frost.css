@@ -1,0 +1,151 @@
+
+#heart{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px);
+
+}
+#time{
+	font-size: 50px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+	margin-top: 0px;
+}
+
+#heart2{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px) ;
+	margin-left: 55px;
+}
+#heart3{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translateY(70px);
+	margin-left: 110px;
+}
+ @keyframes back {
+
+	0% {background-color: #ccccff;}
+	20% {background-color:   #9999ff;}
+	40% {background-color: #6666ff;}
+	60% {background-color: #6666ff;}
+	80% {background-color:  #9999ff; }
+	100% {background-color: #ccccff;}
+}
+body{
+	animation: back 5s;
+	-webkit-animation: back 5s infinite;
+}
+html{
+	cursor: url(../cursor/ice.cur),auto;
+}
+#Qboard{
+	background-color: #0000ff;
+	border: 2px solid black;
+	width: 30%;
+	height: 150px;
+	margin-left: 35%;
+	margin-top: 1%;
+
+}
+#quest{
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+}
+#start{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #1a1aff;
+	border-color: #000080;
+	margin-left: 45%;
+	margin-top: 1%;
+	color: white;
+	cursor: url(../cursor/iceselect.cur),auto;
+}
+#answer{
+	border-color: #ff1a1a;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	margin-left: 50%;
+	margin-top: 5%;
+}
+#timerdiv{
+
+	position: absolute;
+	width: 100px;
+	height: 70px;
+	margin-top: 20px;
+	margin-left: 1100px;
+}
+#next{
+		width: 100px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #ff6666;
+	border-color: #e60000;
+	margin-left: 600px;
+}
+#A{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #1a1aff;
+	border-color: #000080;
+	margin-left: 45%;
+	color: white;
+	cursor: url(../cursor/iceselect.cur),auto;
+
+
+}
+#B{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #1a1aff;
+	border-color: #000080;
+	margin-left: 45%;
+	color: white;
+	cursor: url(../cursor/iceselect.cur),auto;
+
+
+}
+#C{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #1a1aff;
+	border-color: #000080;
+	margin-left: 45%;
+	color: white;
+	cursor: url(../cursor/iceselect.cur),auto;
+
+
+}
+#output{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	color: #f2f2f2;
+}
+#lives{
+	color: #0000b3;
+	transform: translateY(200%);
+	font-size: 30px;
+}
+    #home {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-right:40px solid blue;
+      border-bottom: 20px solid transparent;
+      position: absolute;
+      cursor: url(../cursor/iceselect.cur),auto;
+
+    }

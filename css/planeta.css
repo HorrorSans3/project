@@ -1,0 +1,29 @@
+html{
+	background-image: url("../images/planetback.jpg");
+	background-size: cover;
+	cursor: url(../cursor/spacecur.cur),auto;
+}
+#label{
+	font-size: 60px;
+	color: #b3b3ff;
+	-webkit-text-stroke: 0.5px #fff;
+	padding-top: 100px;
+}
+#button{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 200px;
+    border-radius: 15px;
+	font-size: 43px;
+	background-color: #80bfff;
+	border-width: 5px;
+	border-style: outset;
+}
+#button:hover{
+ background-color: #c299ff;
+ border-style: inset;
+ border-color: #8c8c8c;
+ color: #6600ff;
+ cursor: url(../cursor/alternate.cur),auto;
+
+}

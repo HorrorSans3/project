@@ -1,0 +1,29 @@
+html{
+	background-image: url("../images/skyback.jpg");
+	background-size: cover;
+	cursor: url(../cursor/wing.cur),auto;
+}
+#label{
+	font-size: 60px;
+	color: #00ccff;
+	-webkit-text-stroke: 0.5px #fff;
+	padding-top: 100px;
+}
+#button{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 200px;
+    border-radius: 15px;
+	font-size: 43px;
+	background-color: #80bfff;
+	border-width: 5px;
+	border-style: outset;
+}
+#button:hover{
+ background-color: #b3ffff;
+ border-style: inset;
+ border-color: #8c8c8c;
+ color: #3399ff;
+ cursor: url(../cursor/clouds.cur),auto;
+
+}

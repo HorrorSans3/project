@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>~Trivia Maniac: Easy~</title>
+	<link rel="stylesheet" type="text/css" href="css/easy.css">
+</head>
+<body>
+	<div id="home" onclick="home()"></div><div id="timerdiv"><progress value="0" max="15" id="time"><br><p id="displaytime"></p></div>
+	
+	<br><br><div id="Qboard"><h2 id="quest"></h2></div><br><br>
+	<button onclick="A()" id="A" hidden="true"></button><button onclick="B()" id="B" hidden="true"></button><button onclick="C()" id="C" hidden="true"></button><br><br><br>
+	<button  onclick="question()" id="start">Start</button>
+	<h2 id="output"></h2>
+
+
+<script type="text/javascript" src="js/first.js"></script>
+<script type="text/javascript" src="js/easy.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	
+	$(function question(){
+		$("#start").click(function(){
+			$("#start").hide();
+			$("#next").show();
+			$("#A").show();
+			$("#B").show();
+			$("#C").show();
+		})
+	})
+
+
+</script>
+
+
+</body>
+</html>
