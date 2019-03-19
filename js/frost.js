@@ -135,14 +135,36 @@ var play = ["What is the frozen water part of the Earth called?",
 							document.getElementById('B').innerHTML = "Compact Ice"
 							document.getElementById('C').innerHTML = "Wet Ice"
 
-							document.getElementById('').onclick = function(){
-
+							document.getElementById('A').onclick = function(){
+								lives -= 1;
+								if ((lives)==2){
+									alert(z + ", 2 lives left")
+									document.getElementById('heart3').style.visibility = "hidden"
+								}
+								else if ((lives)==1){
+									alert(z + ", 1 life left")
+									document.getElementById('heart2').style.visibility = "hidden"
+								}
+								else if ((lives)==0){
+									window.location.replace('gameover.html')
+								}
 							}
-							document.getElementById('').onclick = function(){
-								
+							document.getElementById('B').onclick = function(){
+								lives -= 1;
+								if ((lives)==2){
+									alert(z + ", 2 lives left")
+									document.getElementById('heart3').style.visibility = "hidden"
+								}
+								else if ((lives)==1){
+									alert(z + ", 1 life left")
+									document.getElementById('heart2').style.visibility = "hidden"
+								}
+								else if ((lives)==0){
+									window.location.replace('gameover.html')
+								}
 							}
-							document.getElementById('').onclick = function(){
-								
+							document.getElementById('C').onclick = function(){
+								document.getElementById('quest').innerHTML = play[6]
 							}
 
 
