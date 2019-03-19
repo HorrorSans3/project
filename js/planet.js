@@ -8,13 +8,26 @@ var play = ["What is the hottest planet?",
 
  	function question() {
 
+    var z = "Wrong"
+    var lives = 3;
  		document.getElementById('quest').innerHTML = play[0]
  		document.getElementById('A').innerHTML = "Mercury"
  		document.getElementById('B').innerHTML = "Venus"
  		document.getElementById('C').innerHTML = "Earth"
 
  		document.getElementById('A').onclick = function() {
- 			document.getElementById('output').innerHTML = "Unexpectedly Wrong"
+ 			lives -= 1;
+      if ((lives)==2){
+        alert(z + ", 2 lives left")
+        document.getElementById('heart3').style.visibility = "hidden"
+      }
+      else if ((lives)==1){
+        alert(z + ", 1 life left")
+        document.getElementById('heart2').style.visibility = "hidden"
+      }
+      else if ((lives)==0){
+        window.location.replace('gameover.html')
+      }
  		}
  		document.getElementById('B').onclick = function() {
  			document.getElementById('quest').innerHTML = play[1]
@@ -23,10 +36,32 @@ var play = ["What is the hottest planet?",
  			document.getElementById('C').innerHTML = "Neptune"
 
  			document.getElementById('A').onclick = function() {
- 				document.getElementById('output').innerHTML = "Not"
+ 				lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  			}
  			document.getElementById('B').onclick = function() {
- 				document.getElementById('output').innerHTML = "Yes it is not the Answer "
+ 				lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  			}
  			document.getElementById('C').onclick = function() {
  				document.getElementById('quest').innerHTML = play[2]
@@ -35,19 +70,55 @@ var play = ["What is the hottest planet?",
  				document.getElementById('C').innerHTML = "63"
 
  				document.getElementById('A').onclick = function() {
- 					document.getElementById('output').innerHTML = "you are Wrong"
+ 					lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  				}
  				document.getElementById('B').onclick = function() {
- 					
+ 					document.getElementById('quest').innerHTML = play[3]
+          document.getElementById('A').innerHTML = ""
+          document.getElementById('B').innerHTML = ""
+          document.getElementById('C').innerHTML = ""
  				}
  				document.getElementById('C').onclick = function() {
- 					
+ 					lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  				}
  			}
  			
  		}
  		document.getElementById('C').onclick = function() {
- 			document.getElementById('output').innerHTML = "Fortunately Not"
+ 			lives -= 1;
+      if ((lives)==2){
+        alert(z + ", 2 lives left")
+        document.getElementById('heart3').style.visibility = "hidden"
+      }
+      else if ((lives)==1){
+        alert(z + ", 1 life left")
+        document.getElementById('heart2').style.visibility = "hidden"
+      }
+      else if ((lives)==0){
+        window.location.replace('gameover.html')
+      }
  			
  		}
 
@@ -55,15 +126,16 @@ var play = ["What is the hottest planet?",
 		
 
 
-		var tim = 17;
-		var timer = setInterval(function(){
-  			document.getElementById("time").value = 17 - tim;
-  			tim -= 1;
-  			if(tim <= 0){
-    		window.location.replace('gameover.html');
-    		clearInterval(timer);
-    	}
-		}, 1000);
+		var timeleft = 60;
+    var downloadTimer = setInterval(function(){
+      document.getElementById("time").innerHTML = timeleft ;
+      timeleft -= 1;
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("time").innerHTML = "End"
+      window.location.replace('../html/gameover.html')
+      }
+    }, 1000);
 	}
 
     		 
