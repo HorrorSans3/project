@@ -5,7 +5,7 @@ document.getElementById('frosta').onclick = function() {
 	window.location.replace('../html/loadingfrost....html');
 }
 document.getElementById('planeta').onclick = function() {
-	window.location.replace('../html/planeta.html');
+	window.location.replace('../html/loadingplanet....html');
 }
 document.getElementById('skya').onclick = function() {
 	window.location.replace('../html/skya.html');
