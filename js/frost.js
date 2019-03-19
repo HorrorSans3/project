@@ -3,8 +3,8 @@ var play = ["What is the frozen water part of the Earth called?",
  "Which is denser, water or ice?",
  "What is dry ice made of?",
  "How fast does fall snow?",
- "",
- "",
+ "Where is the Snowiest city on Earth?",
+ "For snowman-building, which type of ice is better to use?",
  "",
  "",
  "",
@@ -111,9 +111,56 @@ var play = ["What is the frozen water part of the Earth called?",
 					}
 					document.getElementById('B').onclick = function() {
 						document.getElementById('quest').innerHTML = play[4]
-						document.getElementById('A').innerHTML = ""
-						document.getElementById('B').innerHTML = ""
-						document.getElementById('C').innerHTML = ""
+						document.getElementById('A').innerHTML = "Alaska"
+						document.getElementById('B').innerHTML = "Japan"
+						document.getElementById('C').innerHTML = "Russia"
+
+						document.getElementById('A').onclick = function(){
+							lives -= 1;
+							if ((lives)==2){
+								alert(z + ", 2 lives left")
+								document.getElementById('heart3').style.visibility = "hidden"
+							}
+							else if ((lives)==1){
+								alert(z + ", 1 life left")
+								document.getElementById('heart2').style.visibility = "hidden"
+							}
+							else if ((lives)==0){
+								window.location.replace('gameover.html')
+							}
+						}
+						document.getElementById('B').onclick = function(){
+							document.getElementById('quest').innerHTML = play[5]
+							document.getElementById('A').innerHTML = "Dry Ice"
+							document.getElementById('B').innerHTML = "Compact Ice"
+							document.getElementById('C').innerHTML = "Wet Ice"
+
+							document.getElementById('').onclick = function(){
+
+							}
+							document.getElementById('').onclick = function(){
+								
+							}
+							document.getElementById('').onclick = function(){
+								
+							}
+
+
+						}
+						document.getElementById('C').onclick = function(){
+							lives -= 1;
+							if ((lives)==2){
+								alert(z + ", 2 lives left")
+								document.getElementById('heart3').style.visibility = "hidden"
+							}
+							else if ((lives)==1){
+								alert(z + ", 1 life left")
+								document.getElementById('heart2').style.visibility = "hidden"
+							}
+							else if ((lives)==0){
+								window.location.replace('gameover.html')
+							}
+						}
 					}
 					document.getElementById('C').onclick = function() {
 						lives -= 1;
