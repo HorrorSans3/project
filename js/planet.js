@@ -5,10 +5,10 @@ var play = ["What is the hottest planet?",
  "How long is one day in Venus?",
  "What happens to your ffet in space?",
  "Is a celestal body mostly made of ice, and some dust and rocks.",
- "",
- "",
- "",
- "",
+ "Why is it impossible to land in Saturn, Jupiter, Uranus, and Neptune?",
+ "Which planet has the strongest gravity?",
+ "What is the name of Pluto's moon?",
+ "Is Pluto still considered a planet?",
  ];
 
  	function question() {
@@ -136,9 +136,148 @@ var play = ["What is the hottest planet?",
                 }
                 document.getElementById('C').onclick = function(){
                   document.getElementById('quest').innerHTML = play[6]
-                  document.getElementById('A').innerHTML = ""
-                  document.getElementById('B').innerHTML = ""
-                  document.getElementById('C').innerHTML = ""
+                  document.getElementById('A').innerHTML = "There is no earth"
+                  document.getElementById('B').innerHTML = "It is possible"
+                  document.getElementById('C').innerHTML = "They are too far"
+
+                  document.getElementById('A').onclick = function(){
+                    document.getElementById('quest').innerHTML = play[7]
+                    document.getElementById('A').innerHTML = "Neptune"
+                    document.getElementById('B').innerHTML = "Jupiter"
+                    document.getElementById('C').innerHTML = "Uranus"
+
+                    document.getElementById('A').onclick = function(){
+                      lives -= 1;
+                      if ((lives)==2){
+                        alert(z + ", 2 lives left")
+                        document.getElementById('heart3').style.visibility = "hidden"
+                      }
+                      else if ((lives)==1){
+                        alert(z + ", 1 life left")
+                        document.getElementById('heart2').style.visibility = "hidden"
+                      }
+                      else if ((lives)==0){
+                        window.location.replace('gameover.html')
+                      }
+                    }
+                    document.getElementById('B').onclick = function(){
+                      document.getElementById('quest').innerHTML = play[8]
+                      document.getElementById('A').innerHTML = "Hera"
+                      document.getElementById('B').innerHTML = "Charon"
+                      document.getElementById('C').innerHTML = "Sharon"
+
+                      document.getElementById('A').onclick = function(){
+                        lives -= 1;
+                        if ((lives)==2){
+                          alert(z + ", 2 lives left")
+                          document.getElementById('heart3').style.visibility = "hidden"
+                        }
+                        else if ((lives)==1){
+                          alert(z + ", 1 life left")
+                          document.getElementById('heart2').style.visibility = "hidden"
+                        }
+                        else if ((lives)==0){
+                          window.location.replace('gameover.html')
+                        }
+                        
+                      }
+                      document.getElementById('B').onclick = function(){
+                        document.getElementById('quest').innerHTML = play[9]
+                        document.getElementById('A').innerHTML = "Yes"
+                        document.getElementById('B').innerHTML = "No"
+                        document.getElementById('C').innerHTML = "I dont know"
+
+                        document.getElementById('A').onclick = function(){
+                          lives -= 1;
+                          if ((lives)==2){
+                            alert(z + ", 2 lives left")
+                            document.getElementById('heart3').style.visibility = "hidden"
+                          }
+                          else if ((lives)==1){
+                            alert(z + ", 1 life left")
+                            document.getElementById('heart2').style.visibility = "hidden"
+                          }
+                          else if ((lives)==0){
+                            window.location.replace('gameover.html')
+                          }
+                        }
+                        document.getElementById('B').onclick = function(){
+                          window.location.replace('../html/win.html')
+                        }
+                        document.getElementById('C').onclick = function(){
+                          lives -= 1;
+                          if ((lives)==2){
+                            alert(z + ", 2 lives left")
+                            document.getElementById('heart3').style.visibility = "hidden"
+                          }
+                          else if ((lives)==1){
+                            alert(z + ", 1 life left")
+                            document.getElementById('heart2').style.visibility = "hidden"
+                          }
+                          else if ((lives)==0){
+                            window.location.replace('gameover.html')
+                          }
+                        }
+                      }
+                      document.getElementById('C').onclick = function(){
+                        lives -= 1;
+                        if ((lives)==2){
+                          alert(z + ", 2 lives left")
+                          document.getElementById('heart3').style.visibility = "hidden"
+                        }
+                        else if ((lives)==1){
+                          alert(z + ", 1 life left")
+                          document.getElementById('heart2').style.visibility = "hidden"
+                        }
+                        else if ((lives)==0){
+                          window.location.replace('gameover.html')
+                        }
+                        
+                      }
+                    }
+                    document.getElementById('C').onclick = function(){
+                      lives -= 1;
+                      if ((lives)==2){
+                        alert(z + ", 2 lives left")
+                        document.getElementById('heart3').style.visibility = "hidden"
+                      }
+                      else if ((lives)==1){
+                        alert(z + ", 1 life left")
+                        document.getElementById('heart2').style.visibility = "hidden"
+                      }
+                      else if ((lives)==0){
+                        window.location.replace('gameover.html')
+                      }
+                      }
+                  }
+                   document.getElementById('B').onclick = function(){
+                    lives -= 1;
+                    if ((lives)==2){
+                      alert(z + ", 2 lives left")
+                      document.getElementById('heart3').style.visibility = "hidden"
+                    }
+                    else if ((lives)==1){
+                      alert(z + ", 1 life left")
+                      document.getElementById('heart2').style.visibility = "hidden"
+                    }
+                    else if ((lives)==0){
+                      window.location.replace('gameover.html')
+                    }
+                  }
+                   document.getElementById('C').onclick = function(){
+                    lives -= 1;
+                    if ((lives)==2){
+                      alert(z + ", 2 lives left")
+                      document.getElementById('heart3').style.visibility = "hidden"
+                    }
+                    else if ((lives)==1){
+                      alert(z + ", 1 life left")
+                      document.getElementById('heart2').style.visibility = "hidden"
+                    }
+                    else if ((lives)==0){
+                      window.location.replace('gameover.html')
+                    }
+                  } 
                 }
             }
             document.getElementById('B').onclick = function(){
