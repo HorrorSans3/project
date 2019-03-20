@@ -11,7 +11,7 @@ document.getElementById('skya').onclick = function() {
 	window.location.replace('../html/loadingsky....html');
 }
 document.getElementById('foresta').onclick = function() {
-	window.location.replace('../html/foresta.html');
+	window.location.replace('../html/loadingforest....html');
 }
 function home(){
 	window.location.replace('../first.html')
