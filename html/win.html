@@ -2,12 +2,25 @@
 <html>
 <head>
 	<title>~Trivia Maniac: Win~</title>
-	<link rel="stylesheet" type="text/css" href="css/win.css">
+	<style type="text/css">
+		h1{
+			font-size: 40px;
+			font-family: "Times New Roman", Times, serif;
+		}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+	</style>
 </head>
 <body onload="redirect()">
 <div id="home" onclick="home()"></div>
 <center>
-	<h1>~You Won~</h1>
+	<h1 id="say">~You Won~</h1>
+
 </center>
 <script type="text/javascript" src="js/first.js"></script>
 <script type="text/javascript">
@@ -15,6 +28,10 @@
 		setTimeout(go,3000)
 	}
 	function go(){
+		document.getElementById('say').innerHTML = "Redirecting"
+		setTimeout(go2,2000)
+	}
+	function go2(){
 		window.location.replace('../first.html')
 	}
 </script>

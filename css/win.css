@@ -10,12 +10,12 @@ body{
 
 @keyframes back {
 
-	0% {background-color: #3333ff;}
-	20% {background-color:   #1a75ff;}
-	40% {background-color: #009999;}
-	60% {background-color: #009999;}
-	80% {background-color:  #1a75ff; }
-	100% {background-color: #3333ff;}
+	0% {background-color: #ffccff;}
+	20% {background-color:   #ffcccc;}
+	40% {background-color: #ccccff;}
+	60% {background-color: #ccccff;}
+	80% {background-color:  #ffcccc; }
+	100% {background-color: #ffccff;}
 }
  #home {
      width: 0;

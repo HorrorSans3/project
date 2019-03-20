@@ -196,7 +196,7 @@ var play = ["How wide is the danger zone of a volcano?",
 											document.getElementById('C').innerHTML = "Effusive"
 
 											document.getElementById('A').onclick = function() {
-												window.location.replace('../html/volcanowin.html');
+												window.location.replace('../html/win.html');
 											}
 											document.getElementById('B').onclick = function() {
 												lives -= 1;
