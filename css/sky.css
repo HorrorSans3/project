@@ -3,7 +3,12 @@
 	width: 50px;
 	position: absolute;
 	transform: translateY(70px);
-
+}
+#time{
+	font-size: 50px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+	margin-top: 0px;
 }
 #heart2{
 	height: 50px;

@@ -8,7 +8,7 @@ document.getElementById('planeta').onclick = function() {
 	window.location.replace('../html/loadingplanet....html');
 }
 document.getElementById('skya').onclick = function() {
-	window.location.replace('../html/skya.html');
+	window.location.replace('../html/loadingsky....html');
 }
 document.getElementById('foresta').onclick = function() {
 	window.location.replace('../html/foresta.html');

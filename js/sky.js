@@ -13,10 +13,32 @@ var play = ["The air in the Earth's atmosphere is approximately made up of how m
  		document.getElementById('C').innerHTML = "21%"
 
  		document.getElementById('A').onclick = function(){
- 			document.getElementById('output').innerHTML = "Wrong"
+ 			lives -= 1;
+      if ((lives)==2){
+        alert(z + ", 2 lives left")
+        document.getElementById('heart3').style.visibility = "hidden"
+      }
+      else if ((lives)==1){
+        alert(z + ", 1 life left")
+        document.getElementById('heart2').style.visibility = "hidden"
+      }
+      else if ((lives)==0){
+        window.location.replace('gameover.html')
+      }
  		}
  		document.getElementById('B').onclick = function(){
- 			document.getElementById('output').innerHTML = "Poisonuous amount!!"
+ 			lives -= 1;
+      if ((lives)==2){
+        alert(z + ", 2 lives left")
+        document.getElementById('heart3').style.visibility = "hidden"
+      }
+      else if ((lives)==1){
+        alert(z + ", 1 life left")
+        document.getElementById('heart2').style.visibility = "hidden"
+      }
+      else if ((lives)==0){
+        window.location.replace('gameover.html')
+      }
  		}
  		document.getElementById('C').onclick = function(){
  			document.getElementById('quest').innerHTML = play[1]
@@ -25,13 +47,48 @@ var play = ["The air in the Earth's atmosphere is approximately made up of how m
  			document.getElementById('C').innerHTML = "Tachometer"
 
  			document.getElementById('A').onclick = function(){
+        document.getElementById('quest').innerHTML = play[2]
+        document.getElementById('A').innerHTML = ""
+        document.getElementById('B').innerHTML = ""
+        document.getElementById('C').innerHTML = ""
 
+        document.getElementById('A').onclick = function(){
+
+        }
+        document.getElementById('B').onclick = function(){
+          
+        }
+        document.getElementById('C').onclick = function(){
+          
+        }
  			}
  			document.getElementById('B').onclick = function(){
- 				
+ 				lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  			}
  			document.getElementById('C').onclick = function(){
- 				
+ 				lives -= 1;
+        if ((lives)==2){
+          alert(z + ", 2 lives left")
+          document.getElementById('heart3').style.visibility = "hidden"
+        }
+        else if ((lives)==1){
+          alert(z + ", 1 life left")
+          document.getElementById('heart2').style.visibility = "hidden"
+        }
+        else if ((lives)==0){
+          window.location.replace('gameover.html')
+        }
  			}
  		}
 
@@ -41,15 +98,16 @@ var play = ["The air in the Earth's atmosphere is approximately made up of how m
 
 
 
- var tim = 17;
-		var timer = setInterval(function(){
-  			document.getElementById("time").value = 17 - tim;
-  			tim -= 1;
-  			if(tim <= 0){
-    		window.location.replace('gameover.html');
-    		clearInterval(timer);
-    	}
-		}, 1000);
+ var timeleft = 60;
+    var downloadTimer = setInterval(function(){
+      document.getElementById("time").innerHTML = timeleft ;
+      timeleft -= 1;
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("time").innerHTML = "End"
+      window.location.replace('../html/gameover.html')
+      }
+    }, 1000);
 	}
 
 function home(){
