@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading...</title>
+	<style type="text/css">
+		h1{
+			font-size: 40px;
+			font-family: "Times New Roman", Times, serif;
+		}
+		.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #006622;
+  border-right: 16px solid #b3ffcc;
+  border-bottom: 16px solid #006622;
+  border-left: 16px solid #b3ffcc;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+body{
+	animation: backcolor 2s infinite;
+}
+@keyframes backcolor{
+	0%{background-color: #fff};
+	100%{background-color: red};
+}
+
+
+	</style>
+</head>
+
+<body onload="next()"><center>
+	<h1>Please Wait</h1><br><br><br><br><br>
+	<div class="loader"></div>
+</center>
+
+<script type="text/javascript">
+
+	function next(){
+		setTimeout(go,2000)
+	}
+	function go(){
+		window.location.replace('../html/foresta.html')
+	}
+</script>
+
+</body>
+</html>

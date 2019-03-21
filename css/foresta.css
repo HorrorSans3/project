@@ -1,12 +1,14 @@
 html{
-	background-image: url("../images/planetback.jpg");
+	background-image: url("../images/forestback.jpg");
 	background-size: cover;
-	cursor: url(../cursor/spacecur.cur),auto;
+	cursor: none;
+	cursor: url(../cursor/leaf.cur),auto;
 }
+
 #label{
 	font-size: 60px;
-	color: #b3b3ff;
-	-webkit-text-stroke: 0.5px #fff;
+	color: #66ff66;
+	-webkit-text-stroke: 1px #008000;
 	padding-top: 100px;
 }
 #button{
@@ -15,15 +17,15 @@ html{
 	width: 200px;
     border-radius: 15px;
 	font-size: 43px;
-	background-color: #a64dff;
+	background-color: #00b300;
 	border-width: 5px;
 	border-style: outset;
 }
 #button:hover{
- background-color: #c299ff;
+ background-color: #ccffcc;
  border-style: inset;
  border-color: #8c8c8c;
- color: #6600ff;
- cursor: url(../cursor/alternate.cur),auto;
+ color: #000000;
+ cursor: url(../cursor/alter.cur),auto;
 
 }
