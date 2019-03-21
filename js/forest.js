@@ -21,13 +21,36 @@ var play = ["What causes the most forest loss?",
 		document.getElementById('C').innerHTML = "Animal Activities"
 
 		document.getElementById('A').onclick = function(){
-			
+			lives -= 1;
+			if ((lives)==2){
+				alert(z + ", 2 lives left")
+				document.getElementById('heart3').style.visibility = "hidden"
+			}
+			else if ((lives)==1){
+				alert(z + ", 1 life left")
+				document.getElementById('heart2').style.visibility = "hidden"
+			}
+			else if ((lives)==0){
+				window.location.replace('gameover.html')
+			}
+
 		}
 		document.getElementById('B').onclick = function(){
-			
+			document.getElementById('')
 		}
 		document.getElementById('C').onclick = function(){
-			
+			lives -= 1;
+			if ((lives)==2){
+				alert(z + ", 2 lives left")
+				document.getElementById('heart3').style.visibility = "hidden"
+			}
+			else if ((lives)==1){
+				alert(z + ", 1 life left")
+				document.getElementById('heart2').style.visibility = "hidden"
+			}
+			else if ((lives)==0){
+				window.location.replace('gameover.html')
+			}
 		}
 	
 
