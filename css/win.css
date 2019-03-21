@@ -4,11 +4,11 @@ h1{
 	-webkit-text-stroke: 2px black;
 }
 body{
-	animation: back 5s;
-	-webkit-animation: back 5s infinite;
+	animation: win 5s;
+	-webkit-animation: win 5s infinite;
 }
 
-@keyframes back {
+@keyframes win {
 
 	0% {background-color: #ffccff;}
 	20% {background-color:   #ffcccc;}
