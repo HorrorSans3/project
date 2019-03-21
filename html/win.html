@@ -20,16 +20,19 @@
 <div id="home" onclick="home()"></div>
 <center><br><br><br>
 	<h1 id="say">~You Won~</h1>
+	<h2 id="thanks" hidden="true">Thank you for Playing</h2>
 
 </center>
 <script type="text/javascript" src="js/first.js"></script>
 <script type="text/javascript">
 	function redirect(){
 		setTimeout(go,3000)
+
 	}
 	function go(){
 		document.getElementById('say').innerHTML = "Redirecting"
-		setTimeout(go2,2000)
+		document.getElementById('thanks').hidden = false
+		setTimeout(go2,3000)
 	}
 	function go2(){
 		window.location.replace('../first.html')

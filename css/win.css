@@ -7,7 +7,9 @@ body{
 	animation: win 5s;
 	-webkit-animation: win 5s infinite;
 }
-
+h2{
+	font-size: 50px;
+}
 @keyframes win {
 
 	0% {background-color: #ffccff;}
